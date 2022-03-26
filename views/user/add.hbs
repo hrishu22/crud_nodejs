@@ -1,0 +1,57 @@
+  <h3 >{{tittle}}</h3>
+    <form  action="/"
+    method="POST"
+    class="p-3 mb-2 bg-dark text-white">
+    <input type="hidden" name="_id" value="{{list._id}}">
+<div class="form-group " autocomplete="off">
+   
+        <label>Full Name</label>
+        <input type="text" 
+        class="form-control"
+         name="fullname"
+          value="{{list.fullname}}"
+          placeholder="Full Name">
+          <div class="text-danger">
+              {{user.fullNameError}}
+          </div>
+    </div>
+      <div class="form-group">
+        <label>Email
+
+        </label>
+        <input type="text" 
+        class="form-control"
+         name="email"
+         value="{{list.email}}"
+          placeholder="Email">
+           <div class="text-danger">
+              {{user.emailError}}
+          </div>
+    </div>
+    <div class="form-row">
+         <div class="form-group col-md">
+        <label>City</label>
+        <input type="text" 
+        class="form-control"
+         name="city"
+         value="{{list.city}}"
+          placeholder="City">
+    </div>
+     <div class="form-group col-md">
+        <label>Phone</label>
+        <input type="text" 
+        class="form-control"
+         name="phone"
+         value="{{list.phone}}"
+          placeholder="Phone">
+    </div>
+    </div>
+    <div class="form-group">
+        <button type="submit"
+        class="btn btn-info">
+        <i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/list">
+        <i class="fa fa-list-alt"> View</i>
+        </a>
+    </div>
+</form>
